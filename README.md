@@ -23,8 +23,8 @@ The logic of this program is written in Kotlin and the interface in XML.
 * Refine the aesthetic of the app
 
 # Authors
-Christopher Petrinovich
-Comfort Azuonwu
-Dallin Watson
-Dane Selch
+Christopher Petrinovich,
+Comfort Azuonwu,
+Dallin Watson,
+Dane Selch,
 Melanie Monkurai
