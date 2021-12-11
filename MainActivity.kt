@@ -8,6 +8,16 @@ import kotlin.random.Random
 import android.view.View
 
 
+/*
+* NOTE TO TEAMMATES
+* The start of the activity (the onCreate() function) is at the bottome of the page that holds all
+*   the id's I used for the individual buttons, and text boxes, you can change those to fit your code
+*
+* Additionally. The NextQ() and CompareAnswer() function are just below the list of scriptures. That should be used for 
+*   the score as well as ending the quiz. you can also change the qize size in the nextQ() function
+*/
+
+
 class MainActivity : AppCompatActivity() {
 
     // buttons for the 4 possible answers
@@ -21,7 +31,6 @@ class MainActivity : AppCompatActivity() {
 
     // text holder for the scripture and reference
     lateinit var scrip: EditText
-    lateinit var ref: EditText
     lateinit var question: Scripture // this will hold the scripture that will be used for the test
     lateinit var correct: EditText
 
@@ -203,9 +212,11 @@ class MainActivity : AppCompatActivity() {
             "speaker" to "Mormon"
         )
     )
-    var used = listOf<Int>(0,0,0,0,0)
-    var questionNumber = 0
-
+    
+    
+    // this is the number of questions used so far. this will be incramented each time
+    //the nextQ function is called
+    var questionNumber = 0 
 
     // compareAnswers()
     // function will compare the two answers to see if you got it correct
@@ -224,12 +235,14 @@ class MainActivity : AppCompatActivity() {
     // this will fill in the quiz and act as the funtion to loop to get a new question on
     fun nextQ(){
         questionNumber += 1
-        if (questionNumber <= 5){
+        if (questionNumber <= 5){ // this is the size of the quiz. 
             question = getQ()
             makeQ(question)
             displayQ(question)
+            
         } else {
-            scrip.setText("quiz done")
+            //what will happen after we have been through all of the question.
+            scrip.setText("quiz done") // <--place holder
         }
     }
 
