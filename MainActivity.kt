@@ -294,9 +294,9 @@ class MainActivity : AppCompatActivity() {
         // get the books form the BOM
         if (vol == "BOM") {
             books = arrayOf(
-                "1Nephi",
-                "2Nephi",
-                "jacob",
+                "1 Nephi",
+                "2 Nephi",
+                "Jacob",
                 "Enos",
                 "Jarom",
                 "Omni",
@@ -304,8 +304,8 @@ class MainActivity : AppCompatActivity() {
                 "Mosiah",
                 "Alma",
                 "Helaman",
-                "3Nephi",
-                "4Nephi",
+                "3 Nephi",
+                "4 Nephi",
                 "Mormon",
                 "Moroni"
             )
