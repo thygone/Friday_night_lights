@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestions">
+    <EditText
+        android:id="@+id/scripture"
+        android:layout_width="288dp"
+        android:layout_height="153dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <Button
+        android:id="@+id/op1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/default_option_border_bg"
+        android:gravity="center"
+        android:text="Button"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/op3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/op2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Button"
+        android:background="@drawable/default_option_border_bg"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scripture"
+        app:layout_constraintVertical_bias="0.964"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/op3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/default_option_border_bg"
+        android:text="Button"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/op4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onClick"
+        />
+
+
+    <Button
+        android:id="@+id/op4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Button"
+        android:background="@drawable/default_option_border_bg"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/op2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onClick" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="282dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="68dp"
+        android:padding="10dp"
+        android:background="@color/teal_200"
+        android:text="Good Luck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scripture" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
